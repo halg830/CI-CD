@@ -4,6 +4,9 @@
   "description": "Prueba para usar CI y CD",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "start:dev": "concurrently \"npm run start:ts\" \"npm run start:js\"",
     "start:ts": "tsc -w",
     "start:js": "nodemon dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
