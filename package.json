@@ -1,0 +1,19 @@
+{
+  "name": "ci-y-cd",
+  "version": "1.0.0",
+  "description": "Prueba para usar CI y CD",
+  "main": "index.js",
+  "scripts": {
+    "start:ts": "tsc -w",
+    "start:js": "nodemon dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "halg830",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0"
+  }
+}
